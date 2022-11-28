@@ -8,6 +8,8 @@ This application is a note taking website using the express.js package.
 See below for the screenshot of the product.
 ![portfolio demo](./public/assets/screenshot.png)
 
+URL: https://craymorgana-notetaker.herokuapp.com/
+
 ## Table of Contents
 
 - [Express.JS Note Taker](#expressjs-note-taker)
