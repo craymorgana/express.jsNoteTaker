@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const { readAndAppend, readFromFile } = require("../../helpers/fsUtils");
+const { json } = require("express");
+const { readAndAppend, readFromFile, writeToFile } = require("../../helpers/fsUtils");
 const uuid = require('../../helpers/uuid');
 
 router.get("/", (req, res) => {
@@ -32,5 +33,21 @@ router.post("/", (req, res) => {
 		res.json("Error in posting new note");
 	}
 });
+
+router.delete("/:id", (req, res) => {
+	console.info(`${req.method} request received for notes`);
+	const id = req.params.id;
+	readFromFile('./db/db.json')
+	.then((data) => JSON.parse(data))
+	.then((json) => {
+
+		const result = json.filter((title) => title.id !== id);
+
+		writeToFile('./db/db.json', result);
+		res.json(`Note ${id} has been deleted 🗑️`)
+	})
+
+
+})
 
 module.exports = router;

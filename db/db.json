@@ -1,21 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
         "title": "Shopping List",
-        "text": "Popcorn\nBagels",
-        "id": "9970"
-    },
-    {
-        "title": "ddfsf",
-        "text": "aa",
-        "id": "d2ec"
-    },
-    {
-        "title": "New note",
-        "text": "New note",
-        "id": "0cad"
+        "text": "Eggs\nCheese\nTomatoes",
+        "id": "9091"
     }
 ]

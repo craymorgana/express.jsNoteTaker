@@ -3,10 +3,11 @@
     
 ## Description
 
-This application is a note taking website using the express.js package.
+This application is a note taking website using the express.js package. Users can add, update, and delete existing notes.
 
 See below for the screenshot of the product.
-![portfolio demo](./public/assets/screenshot.png)
+![portfolio demo](./screenshot1.png)
+![portfolio demo](./screenshot2.png)
 
 URL: https://craymorgana-notetaker.herokuapp.com/
 
@@ -20,7 +21,7 @@ URL: https://craymorgana-notetaker.herokuapp.com/
     
 ## Installation <a name="installation"></a>
 
-To use on your client type "npm i" on the terminal then "node server.js"
+To use on your client type "npm i" on the terminal then "node server.js". On the browser navigate to "http://localhost:3001/"
 
 ## License <a name="license"></a>
 
